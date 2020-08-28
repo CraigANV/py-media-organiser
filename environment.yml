@@ -1,0 +1,7 @@
+name: media-organiser
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pyyaml=5.3

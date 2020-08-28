@@ -1,0 +1,5 @@
+sources:
+  - /home/craig/dl/photos1
+  - /home/craig/dl/photos2
+
+destination: /home/craig/media_organiser
