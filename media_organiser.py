@@ -6,6 +6,7 @@ import os
 from shutil import copyfile
 import hashlib
 from pathlib import Path
+import re
 import yaml
 
 
@@ -21,6 +22,7 @@ def get_stem_and_extension(file_path):
 def insert_uid(file_path):
     """Return the filename with a random UID inserted before the extension"""
     stem, extension = get_stem_and_extension(file_path)
+    stem = re.sub('\W+', '_', stem)  # remove special chars from stem
     uid = uuid.uuid1().hex[:8]
     uid_filename = stem + '_' + uid + extension
     return uid_filename
