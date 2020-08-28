@@ -1,9 +1,7 @@
 sources:
   - /home/craig/dl/opti_video/
   - /home/craig/dl/whatsapp_video/
-
 destination: /home/craig/media_organiser
-
 extensions:
   - jpg
   - jpeg

@@ -1,11 +1,13 @@
 # Media Organiser
 
-A simple Python app for merging multiple photo / image backup directories
+A simple Python app for merging multiple media directories
+
+### config.yml
+- sources - a list of source directories
+- destination - the directory to copy the files to
+- extensions - a list of the file extensions to copy (case-insensitive)
 
 ## TODO
-- Insert GUID into filenames to prevent collisions
-- Copy files to common directory
-- Sort through and remove dupes
 - Remove GUID filename component
 - Rename file according to EXIF data
 
