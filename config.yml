@@ -3,3 +3,11 @@ sources:
   - /home/craig/dl/whatsapp_video/
 
 destination: /home/craig/media_organiser
+
+extensions:
+  - jpg
+  - jpeg
+  - png
+  - mp4
+  - mov
+  - avi
