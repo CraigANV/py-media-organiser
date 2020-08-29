@@ -1,0 +1,12 @@
+sources:
+  - /home/craig/4tb/storage/
+
+destination: /home/craig/media_organiser/unsorted_videos/
+extensions:
+  - mp4
+  - mov
+  - avi
+  - mkv
+  - wmv
+  - flv
+  - webm
