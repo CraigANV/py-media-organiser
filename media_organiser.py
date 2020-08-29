@@ -7,6 +7,7 @@ from shutil import copyfile
 import hashlib
 from pathlib import Path
 import re
+import sys
 import yaml
 
 
@@ -107,8 +108,13 @@ def copy_new_files(source_dirs, destination_dir, extensions):
         existing_hashes.append(file_hash)
 
 
-def main():
-    with open(r'config.yml') as file:
+def main(args):
+
+    if len(args) != 2:
+        print("Parameter required: path to config file")
+        exit(1)
+
+    with open(args[1]) as file:
         config = yaml.load(file, Loader=yaml.FullLoader)
         source_dirs = config['sources']
         destination_dir = os.path.join(config['destination'], '')  # adds trailing slash if not present
@@ -124,4 +130,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv)
